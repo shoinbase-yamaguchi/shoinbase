@@ -184,6 +184,19 @@ header {
 .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* =========================================================
+   ANNOUNCEMENT BAR
+   ========================================================= */
+.announce-bar {
+  background: var(--terra-dark);
+  color: var(--white);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 20px;
+  letter-spacing: 0.3px;
+}
+
+/* =========================================================
    HERO
    ========================================================= */
 .hero {
@@ -641,6 +654,12 @@ header {
 .name-box h4 { font-size: 15.5px; color: var(--terra-dark); margin-bottom: 10px; }
 .name-box p { font-size: 14px; color: var(--ink); margin: 0; }
 
+.members-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
 .profile-card {
   background: var(--white);
   border: 1px solid var(--line);
@@ -757,6 +776,7 @@ footer {
   .about-grid { grid-template-columns: 1fr; }
   .features { grid-template-columns: 1fr 1fr; }
   .events-grid { grid-template-columns: 1fr 1fr; }
+  .members-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
 }
 
 @media (max-width: 768px) {
